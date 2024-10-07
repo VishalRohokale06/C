@@ -1,10 +1,10 @@
-# 1 "code1.c"
+# 1 "code2.c"
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 31 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 32 "<command-line>" 2
-# 1 "code1.c"
+# 1 "code2.c"
 # 1 "/usr/include/stdio.h" 1 3 4
 # 27 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -722,21 +722,10 @@ extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
 # 873 "/usr/include/stdio.h" 3 4
 
-# 2 "code1.c" 2
+# 2 "code2.c" 2
 
 
-# 3 "code1.c"
+# 3 "code2.c"
 void main(){
  int x = 10;
- float y = 20.20;
- char ch = 'A';
- double d = 333.333;
- long l = 1212121212112;
-
-
- printf("%d\n",x);
- printf("%f\n",y);
- printf("%c\n",ch);
- printf("%lf\n",d);
- printf("%ld\n",l);
 }

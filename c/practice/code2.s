@@ -1,8 +1,4 @@
-	.file	"cod2.c"
-	.text
-	.section	.rodata
-.LC1:
-	.string	"%f\n"
+	.file	"code2.c"
 	.text
 	.globl	main
 	.type	main, @function
@@ -15,11 +11,7 @@ main:
 	.cfi_offset 6, -16
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
-	movq	.LC0(%rip), %rax
-	movq	%rax, %xmm0
-	leaq	.LC1(%rip), %rdi
-	movl	$1, %eax
-	call	printf@PLT
+	movl	$10, -4(%rbp)
 	nop
 	popq	%rbp
 	.cfi_def_cfa 7, 8
@@ -27,11 +19,6 @@ main:
 	.cfi_endproc
 .LFE0:
 	.size	main, .-main
-	.section	.rodata
-	.align 8
-.LC0:
-	.long	1374389535
-	.long	1074339512
 	.ident	"GCC: (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0"
 	.section	.note.GNU-stack,"",@progbits
 	.section	.note.gnu.property,"a"
