@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+void main(){
+
+        int size;
+        printf("Enter size:\n");
+        scanf("%d",&size);
+
+        int arr[size];
+        printf("Enter the elements:\n");
+
+        for(int i=0;i<size;i++){
+                scanf("%d",&arr[i]);
+        }
+
+        int product=1;
+
+        printf("Product of odd indexed elements: ");
+        for(int i=0;i<size;i++){
+                if(i%2==1){
+                        product*=arr[i];
+                }
+        }
+        printf("%d\n",product);
+}
