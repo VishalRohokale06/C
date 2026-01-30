@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+void main(){
+
+	int x,y,z;
+	x=10;
+	y=20;
+	z=30;
+
+	int *ptr1=&x;
+	int *ptr2=&y;
+	int *ptr3=&z;
+
+	int **ptr4=&ptr1;
+	int **ptr5=&ptr2;
+	int **ptr6=&ptr3;
+
+	printf("%d\n",x);
+	printf("%d\n",y);
+	printf("%d\n",z);
+
+	printf("%d\n",*ptr1);
+	printf("%d\n",*ptr2);
+	printf("%d\n",*ptr3);
+
+	printf("%d\n",**ptr4);
+	printf("%d\n",**ptr5);
+	printf("%d\n",**ptr6);
+}
+
